@@ -1,0 +1,64 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Copy of Untitled2.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOnmSPjR8YuDfs7tcsVNEXm",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Janu-dot/Janani/blob/main/PRIME%20NUMBERS%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "p6QEix5ow_ls",
+        "outputId": "66d901ee-2df8-4e16-b571-a53760be0795"
+      },
+      "source": [
+        "lower = int(input(\"Enter lower limit:\"))\r\n",
+        "upper = int(input(\"Enter upper limit:\"))\r\n",
+        "\r\n",
+        "print(\"prime number's  between\", lower,\"and\", upper,\"are:\")\r\n",
+        "for num in range (lower , upper+1):\r\n",
+        "    if num >1 :\r\n",
+        "      for i in range (2,num):\r\n",
+        "        if num % i==0:\r\n",
+        "           break\r\n",
+        "      else:\r\n",
+        "          print(num,end=\" \")\r\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter lower limit:1\n",
+            "Enter upper limit:99\n",
+            "prime number's  between 1 and 99 are:\n",
+            "2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 "
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
